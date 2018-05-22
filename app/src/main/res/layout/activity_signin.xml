@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="phonenumber"
+            android:inputType="phone"
+            android:text="+8801724353528"
+            android:textColorHint="@android:color/white"
+            android:textSize="34sp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="14"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text="123456"
+            android:textColorHint="@android:color/white"
+            android:textSize="34sp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"/>
+
+        <com.rey.material.widget.CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Material.Drawable.CheckBox"
+            android:text="Remember me"
+            android:id="@+id/ckbRemember"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            app:cbd_strokeColor="@android:color/darker_gray"
+            app:cbd_tickColor="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Sign In "
+        android:textColor="@color/colorPrimary"
+        app:fButtonColor="@android:color/holo_blue_dark"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"
+        app:cornerRadius="5dp"
+        app:shadowColor="@android:color/black"/>
+
+</RelativeLayout>

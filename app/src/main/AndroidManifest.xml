@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.develop.windexit.finalproject">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        xmlns:tools="http://schemas.android.com/tools"
+        android:name=".MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/appiconfinal"
+        tools:replace="android:icon"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_idd" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD3y960qQPkSVglE3bqdRy1StzlFYwq6U4" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemeFullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Signin" />
+        <activity
+            android:name=".SignUp"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Home"
+            android:label="Menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FoodList"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FoodDetail"
+            android:theme="@style/AppThemeFullScreen" />
+        <activity
+            android:name=".Cart"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OrderStatus"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme" />
+
+        <service android:name=".Service.MyFirebaseIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider866039636901572"
+            android:exported="true" />
+
+        <activity
+            android:name=".PhoneAuthActivity"
+            android:theme="@style/AppThemeFullScreen" />
+        <activity
+            android:name=".TrackingOrder"
+            android:parentActivityName=".OrderStatus"
+            android:theme="@style/AppThemeFullScreen" />
+        <activity
+            android:name=".SearchActivity"
+            android:theme="@style/AppThemeFullScreen" />
+        <activity
+            android:name=".FavoritesActivity"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".About"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".Home"/>
+    </application>
+
+</manifest>

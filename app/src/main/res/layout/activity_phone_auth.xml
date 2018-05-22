@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <EditText
+            android:id="@+id/field_phone_number"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73dp"
+            android:background="#90cecece"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#545454"
+            android:textColorHint="#545454"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/field_verification_code"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/field_phone_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="#90cecece"
+            android:hint="Enter OTP "
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#545454"
+            android:textColorHint="#545454"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/button_start_verification"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/field_verification_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp"
+            android:padding="10dp"
+            android:text="Next"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/button_verify_phone"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/button_start_verification"
+            android:layout_alignBottom="@+id/button_start_verification"
+            android:layout_alignLeft="@+id/button_start_verification"
+            android:layout_alignStart="@+id/button_start_verification"
+            android:padding="10dp"
+            android:text="Verify otp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_resend"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/button_start_verification"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:text="Resend otp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DESH</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_idd">866039636901572</string>
+    <string name="facebook_login_protocol_name">fb866039636901572</string>
+    <string name="title_activity_tracking_order">Tracking order</string>
+
+    <string name="forgotPassword"><u>Forgot password?</u></string>
+
+    <string-array name="oder_view">
+        <item>Today Orders</item>
+        <item>All Orders</item>
+        <item>Date Picker</item>
+    </string-array>
+
+</resources>

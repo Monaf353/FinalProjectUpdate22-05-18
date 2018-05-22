@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:iconTint="@color/colorPrimary"
+            android:title="Menu" />
+
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:iconTint="@color/colorPrimary"
+            android:title="Cart" />
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/ic_check_circle_black_24dp"
+            android:iconTint="@color/colorPrimary"
+            android:title="Orders" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:iconTint="@color/colorPrimary"
+            android:title="Favorites" />
+
+        <item
+            android:id="@+id/nav_Buy_it_blance"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:iconTint="@color/colorPrimary"
+            android:title="Desh Balance" />
+        <item
+            android:id="@+id/nav_chnge_profile"
+            android:icon="@drawable/ic_menu_manage"
+            android:iconTint="@color/colorPrimary"
+            android:title="Update Profile" />
+        <item
+            android:id="@+id/nav_subscribeNews"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:iconTint="@color/colorPrimary"
+            android:title="Allow Notification" />
+        <item
+            android:id="@+id/about"
+            android:title="About"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:iconTint="@color/colorPrimary"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/met_ic_clear"
+            android:iconTint="@color/colorPrimary"
+            android:title="Log Out" />
+
+    </group>
+
+
+</menu>
